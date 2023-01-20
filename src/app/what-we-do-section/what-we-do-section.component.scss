@@ -1,0 +1,35 @@
+.container {
+    background: linear-gradient(44.8deg, rgba(255, 136, 102, 0.67) -53.1%, rgba(255, 221, 136, 0.28) 49%);
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: auto auto auto auto auto;
+    
+        div { 
+            text-align: center;
+            font-size: 20px;
+            box-sizing: border-box;
+            padding: 40px;
+            color: orangered;
+        }
+    
+        img {
+            width: 70px;
+            padding-bottom: 20px;
+        }
+
+        @media screen and (max-width: 750px) {
+            width: 100%;
+            display: block;
+
+            img {
+                width: 100px;
+            }
+        }
+    }
+
+    h2 {
+        padding: 40px;
+        font-size: 30px;
+    }   
+}
